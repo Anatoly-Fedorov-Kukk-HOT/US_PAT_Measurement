@@ -1,8 +1,8 @@
-# ReadMe File for US/PAT C-mode Measurement Script
+# US/PAT C-mode measurement script
 
 ## Overview
 
-This Python script is designed to perform a sequence of combined ultrasound (US) and photoacoustic tomography (PAT) B-mode measurements. The script interfaces with a Thorlabs stage and an optical parametric oscillator (OPO) from InnoLas via a socket connection, manages the OPO flashlamp, and executes the measurements by moving the stage to specified locations and performing laser multishots. After completing the measurements, the stage returns to its initial position, and the OPO flashlamp is turned off. All the key parameters and timestamps are logged in a separate log file for reference.
+This Python script is designed to perform a sequence of combined ultrasound (US) and photoacoustic tomography (PAT) B-mode measurements, as used during the clinical measurements in Rostock. The script interfaces with a Thorlabs stage and an optical parametric oscillator (OPO) from InnoLas via a socket connection, manages the OPO flashlamp, and executes the measurements by moving the stage to specified locations and performing laser multishots. After completing the measurements, the stage returns to its initial position, and the OPO flashlamp is turned off. All the key parameters and timestamps are logged in a separate log file for reference.
 
 ## Script Execution Environment
 
@@ -23,7 +23,7 @@ This Python script is designed to perform a sequence of combined ultrasound (US)
 
 4. **Perform Measurements:**
    - Moves the stage to target positions.
-   - Performs laser multishots at each position.
+   - Performs laser multishots (4 per wavelength) at each position.
    - Uses multiple wavelengths if specified.
 
 5. **Clean Up:**
