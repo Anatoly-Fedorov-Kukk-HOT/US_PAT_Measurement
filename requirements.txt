@@ -1,0 +1,2 @@
+pylablib
+termcolor
