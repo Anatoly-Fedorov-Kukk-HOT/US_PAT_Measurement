@@ -2,12 +2,12 @@
 
 ## Overview
 
-This Python script is designed to perform combined Ultrasound (US) and Photoacoustic Tomography (PAT) C-mode measurements in a clinical setting. The script interfaces with a Thorlabs stage and an Optical Parametric Oscillator (OPO) via a socket connection, manages the OPO flashlamp, and executes the measurements by moving the stage to specified locations and performing laser multishots. After completing the measurements, the stage returns to its initial position, and the OPO flashlamp is turned off. All the key parameters and timestamps are logged in a separate log file for reference.
+This Python script is designed to perform a sequence of combined ultrasound (US) and photoacoustic tomography (PAT) B-mode measurements. The script interfaces with a Thorlabs stage and an optical parametric oscillator (OPO) from InnoLas via a socket connection, manages the OPO flashlamp, and executes the measurements by moving the stage to specified locations and performing laser multishots. After completing the measurements, the stage returns to its initial position, and the OPO flashlamp is turned off. All the key parameters and timestamps are logged in a separate log file for reference.
 
 ## Script Execution Environment
 
 - The script is intended to be executed within the Spyder console environment.
-- It runs on an OCT PC used in clinical settings for combined US/PAT measurements.
+- It runs on an PC that is connected to the OPO via a LAN cable and to the ThorLabs stage.
 
 ## Main Functionalities
 
@@ -64,6 +64,3 @@ This Python script is designed to perform combined Ultrasound (US) and Photoacou
 - Ensure the stage is homed and the initial position is clear before starting the measurements.
 
 ---
-
-This ReadMe file provides a concise summary of the script's functionality, parameters, and usage instructions for effective and safe operation during clinical measurements.
-```
